@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}
+
+#loginregister {
+    height: 10%;
+    width: 100%;
+    background: #4B499D;
+    background: -webkit-linear-gradient(180deg, #4B499D, #A0A1CD);
+    margin-top: 0px;
+
+}
+
+#header {
+    height: 40%;
+    width: 100%;
+
+    background-color: blue;
+}
+
+#header img {
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+#sidemenu {
+    height: 63%;
+    width: 20%;
+    background-color: #EF84B2;
+    display: inline-block;
+}
+
+#map {
+    height: 63%;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-left: -4px;
+}

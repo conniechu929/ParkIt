@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'park_it/css/styles.css' %}" media="screen" title="no title"  charset="utf-8">
+    <title>San Francisco Parking Spots Inquiry</title>
+  </head>
+  <body>
+      <div id="mycarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="{% static 'parking/images/header.jpg' %}" alt="" class="img-responsive">
+                <div class="carousel-caption">
+                  <h1>Welcome to San Francisco!</h1>
+                      <h3> Want to know where to Park?</h3>
+                       <form class="" action="/index" method="post">
+                        {% csrf_token %}
+                      <input class="btn btn-default" type="submit" value="Lets's Start!" >
+                    </form>
+                </div>
+              </div>
+           </div>
+      </div>
+  </body>
+</html>
